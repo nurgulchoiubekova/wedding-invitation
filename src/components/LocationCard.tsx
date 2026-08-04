@@ -13,7 +13,7 @@ export const LocationCard: React.FC = () => {
 
   return (
     <section className="relative w-full max-w-lg mx-auto px-4 py-6">
-      <div className="rounded-3xl bg-[#FAF5EF] p-8 shadow-xl border-2 border-[#D4AF37]/40 text-center relative overflow-hidden">
+      <div className="rounded-3xl royal-card p-8 text-center relative overflow-hidden">
         {/* Header Badge */}
         <div className="inline-flex p-3 rounded-full bg-[#8B1E3F] text-[#FCF6BA] shadow-lg mb-4">
           <MapPin className="w-6 h-6" />

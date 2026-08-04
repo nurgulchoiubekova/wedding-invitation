@@ -9,7 +9,7 @@ export const InvitationText: React.FC = () => {
 
   return (
     <section className="relative w-full max-w-lg mx-auto px-4 py-8">
-      <div className="relative rounded-3xl bg-[#FAF5EF] p-8 shadow-xl border-2 border-[#D4AF37]/40 text-center overflow-hidden">
+      <div className="relative rounded-3xl royal-card p-8 text-center overflow-hidden">
         {/* Top Hanging Floral Vine Illustration */}
         <div className="absolute top-0 left-0 right-0 h-12 pointer-events-none opacity-80 flex justify-center">
           <svg viewBox="0 0 300 40" className="w-full h-full fill-[#8B1E3F]">
@@ -23,7 +23,7 @@ export const InvitationText: React.FC = () => {
         {/* Heart Divider */}
         <div className="flex justify-center items-center gap-2 mb-6 mt-2 text-[#8B1E3F]">
           <div className="w-12 h-[1px] bg-[#D4AF37]"></div>
-          <Heart className="w-5 h-5 fill-[#8B1E3F] text-[#8B1E3F]" />
+          <Heart className="w-6 h-6 fill-[#8B1E3F] text-[#8B1E3F] animate-heartbeat" />
           <div className="w-12 h-[1px] bg-[#D4AF37]"></div>
         </div>
 
@@ -33,7 +33,7 @@ export const InvitationText: React.FC = () => {
 
         <div className="space-y-4 font-serif-title text-lg sm:text-xl text-[#3D0914] leading-relaxed">
           <p>
-            Сиздерди балдарыбыз <span className="font-bold text-[#8B1E3F] text-2xl font-serif-title">Канат</span> менен <span className="font-bold text-[#8B1E3F] text-2xl font-serif-title">Бактыгүлдүн</span> үйлөнүү үлпөт тоюна арналган салтанатка келип, кадырлуу коногубуз болууга чакырабыз!
+            Сиздерди балдарыбыз <span className="font-bold text-[#8B1E3F] text-2xl sm:text-3xl font-serif-title border-b-2 border-[#D4AF37]">Канатбек</span> менен <span className="font-bold text-[#8B1E3F] text-2xl sm:text-3xl font-serif-title border-b-2 border-[#D4AF37]">Бактыгүлдүн</span> үйлөнүү үлпөт тоюна арналган салтанатка келип, кадырлуу коногубуз болууга чакырабыз!
           </p>
         </div>
 

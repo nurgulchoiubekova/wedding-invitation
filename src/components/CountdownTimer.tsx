@@ -35,7 +35,7 @@ export const CountdownTimer: React.FC = () => {
 
   return (
     <section className="relative w-full max-w-lg mx-auto px-4 py-6 text-center">
-      <div className="rounded-3xl bg-[#FAF5EF] p-8 shadow-xl border-2 border-[#D4AF37]/40 relative overflow-hidden">
+      <div className="rounded-3xl royal-card p-8 relative overflow-hidden">
         <h3 className="font-script text-4xl sm:text-5xl text-[#8B1E3F] font-bold mb-6">
           Той-кечесине чейин:
         </h3>

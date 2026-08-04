@@ -57,8 +57,8 @@ export const FooterAndMusic: React.FC<FooterAndMusicProps> = ({
           Сизди күтөбүз!
         </h2>
 
-        <p className="font-serif-title text-[#FCF6BA]/90 text-lg sm:text-xl mb-8">
-          Канат & Бактыгүл — 12.09.2026
+        <p className="font-serif-title text-[#FCF6BA]/90 text-lg sm:text-xl mb-8 font-semibold tracking-wide">
+          Канатбек & Бактыгүл — 12.09.2026
         </p>
 
         {/* Action Buttons: Host RSVP list & Music toggle */}

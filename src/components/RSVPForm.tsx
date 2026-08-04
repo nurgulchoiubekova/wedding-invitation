@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import confetti from 'canvas-confetti';
 import { RSVPResponse } from '../types';
 import { CheckCircle2, Plus, Minus, Send, Heart } from 'lucide-react';
 
@@ -29,6 +30,16 @@ export const RSVPForm: React.FC<RSVPFormProps> = ({ onRSVPSubmitted }) => {
       submittedAt: new Date().toLocaleDateString('ky-KG'),
     };
 
+    // Trigger celebratory golden confetti burst if attending
+    if (attending) {
+      confetti({
+        particleCount: 60,
+        spread: 80,
+        origin: { y: 0.7 },
+        colors: ['#D4AF37', '#FFD700', '#8B1E3F', '#FCF6BA'],
+      });
+    }
+
     // Save to local storage
     const existing = JSON.parse(localStorage.getItem('wedding_rsvps') || '[]');
     localStorage.setItem('wedding_rsvps', JSON.stringify([newRSVP, ...existing]));
@@ -39,7 +50,7 @@ export const RSVPForm: React.FC<RSVPFormProps> = ({ onRSVPSubmitted }) => {
 
   return (
     <section className="relative w-full max-w-lg mx-auto px-4 py-6">
-      <div className="rounded-3xl bg-[#FAF5EF] p-8 shadow-xl border-2 border-[#D4AF37]/40 relative overflow-hidden">
+      <div className="rounded-3xl royal-card p-8 relative overflow-hidden">
         {/* Top Flower Illustration Ornament */}
         <div className="flex justify-center mb-2">
           <div className="w-16 h-16 rounded-full bg-[#8B1E3F]/10 border border-[#D4AF37] flex items-center justify-center">

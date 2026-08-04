@@ -32,7 +32,7 @@ export const Timeline: React.FC = () => {
   return (
     <section className="relative w-full max-w-lg mx-auto px-4 py-8">
       {/* Curved S-Line Container Background */}
-      <div className="relative rounded-3xl bg-[#FAF5EF] p-8 shadow-xl border-2 border-[#D4AF37]/40 overflow-hidden">
+      <div className="relative rounded-3xl royal-card p-8 overflow-hidden">
         {/* Header */}
         <div className="text-center mb-10">
           <h3 className="font-serif-title text-2xl sm:text-3xl font-bold text-[#5C0E20] mb-1 tracking-wider">

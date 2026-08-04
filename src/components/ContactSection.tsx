@@ -3,11 +3,11 @@ import { MessageCircle, Heart } from 'lucide-react';
 
 export const ContactSection: React.FC = () => {
   const organizerPhone = "996770123456"; // WhatsApp contact link
-  const prefilledMessage = encodeURIComponent("Саламатсызбы! Канат менен Бактыгүлдүн үйлөнүү үлпөт той-кечеси боюнча суроом бар эле.");
+  const prefilledMessage = encodeURIComponent("Саламатсызбы! Канатбек менен Бактыгүлдүн үйлөнүү үлпөт той-кечеси боюнча суроом бар эле.");
 
   return (
     <section className="relative w-full max-w-lg mx-auto px-4 py-6 text-center">
-      <div className="rounded-3xl bg-[#FAF5EF] p-8 shadow-xl border-2 border-[#D4AF37]/40 flex flex-col items-center relative overflow-hidden">
+      <div className="rounded-3xl royal-card p-8 flex flex-col items-center relative overflow-hidden">
         <h3 className="font-script text-4xl sm:text-5xl font-bold text-[#8B1E3F] mb-3">
           Деталдар:
         </h3>

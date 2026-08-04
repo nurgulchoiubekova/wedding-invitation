@@ -3,7 +3,7 @@ import React from 'react';
 export const Organizers: React.FC = () => {
   return (
     <section className="relative w-full max-w-lg mx-auto px-4 py-6 text-center">
-      <div className="rounded-3xl bg-[#FAF5EF] p-8 shadow-xl border-2 border-[#D4AF37]/40 relative overflow-hidden">
+      <div className="rounded-3xl royal-card p-8 relative overflow-hidden">
         <h3 className="font-sans-clean text-xs uppercase tracking-[0.25em] font-bold text-[#8B1E3F] mb-4">
           УРМАТТОО МЕНЕН ТОЙ ЭЭЛЕРИ:
         </h3>

@@ -71,7 +71,7 @@ export function playEnvelopeOpenSound() {
   }
 }
 
-const DEFAULT_MP3_URL = "https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=wedding-romantic-piano-112199.mp3";
+const DEFAULT_MP3_URL = "/audio/ordinary.mp3";
 
 /**
  * Romantic Music Controller supporting both MP3 audio files (uploaded or URL) and Web Audio fallback
@@ -82,7 +82,7 @@ export class RomanticMusicPlayer {
   private synthTimer: number | null = null;
   private ctx: AudioContext | null = null;
   private currentUrl = DEFAULT_MP3_URL;
-  private currentTrackName = "Романтикалык обон";
+  private currentTrackName = "Alex Warren - Ordinary";
 
   constructor() {
     this.loadSavedAudio();
@@ -149,8 +149,8 @@ export class RomanticMusicPlayer {
     localStorage.removeItem('wedding_custom_audio');
     localStorage.removeItem('wedding_custom_audio_name');
     this.currentUrl = DEFAULT_MP3_URL;
-    this.currentTrackName = "Романтикалык обон";
-    this.setCustomAudio(DEFAULT_MP3_URL, "Романтикалык обон");
+    this.currentTrackName = "Alex Warren - Ordinary";
+    this.setCustomAudio(DEFAULT_MP3_URL, "Alex Warren - Ordinary");
   }
 
   public getCurrentTrackName(): string {

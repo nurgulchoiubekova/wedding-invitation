@@ -16,7 +16,7 @@ import { RomanticMusicPlayer } from './utils/audio';
 export default function App() {
   const [isEnvelopeOpen, setIsEnvelopeOpen] = useState(false);
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
-  const [currentTrackName, setCurrentTrackName] = useState('Романтикалык обон');
+  const [currentTrackName, setCurrentTrackName] = useState('Alex Warren - Ordinary');
   const [rsvps, setRsvps] = useState<RSVPResponse[]>([]);
   const [isAdminOpen, setIsAdminOpen] = useState(false);
 
