@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-script {
+    font-family: 'Great Vibes', 'Marck Script', cursive;
+  }
+  .font-handwriting {
+    font-family: 'Marck Script', cursive;
+  }
+  .font-serif-title {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+  .font-sans-clean {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+/* Custom 3D envelope perspective and unfolding classes */
+.perspective-1000 {
+  perspective: 1200px;
+}
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Hide scrollbar for clean mobile experience while allowing scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes goldShimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #B38728 0%, #FBF5B7 25%, #AA771C 50%, #FCF6BA 75%, #BF953F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: goldShimmer 5s linear infinite;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 30%, #B38728 60%, #FBF5B7 80%, #AA771C 100%);
+}
+
+.burgundy-gradient-bg {
+  background: linear-gradient(135deg, #5C0E20 0%, #8B1E3F 50%, #3D0914 100%);
+}
+
+/* Wax seal animation */
+@keyframes sealGlow {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 10px 30px rgba(112, 16, 38, 0.6), 0 0 20px rgba(212, 175, 55, 0.5);
+  }
+  50% {
+    transform: scale(1.06);
+    box-shadow: 0 15px 40px rgba(112, 16, 38, 0.8), 0 0 30px rgba(212, 175, 55, 0.8);
+  }
+}
+
+.animate-seal {
+  animation: sealGlow 2.5s ease-in-out infinite;
+}
+
+/* Paper texture feel */
+.paper-pattern {
+  background-color: #FAF5EF;
+  background-image: radial-gradient(#D4AF37 0.4px, transparent 0.4px), radial-gradient(#8B1E3F 0.4px, #FAF5EF 0.4px);
+  background-size: 16px 16px;
+  background-position: 0 0, 8px 8px;
+}
+

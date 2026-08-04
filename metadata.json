@@ -1,0 +1,6 @@
+{
+  "name": "Үйлөнүү той - Канат & Бактыгүл",
+  "description": "Интерактивный веб-сайт-приглашение на свадьбу Каната и Бактыгүл с 3D-конвертом, золотой сургучной печатью, музыкой и RSVP.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
